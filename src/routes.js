@@ -1,5 +1,7 @@
 const routes = require('express').Router();
-const { getNotes, addNotes, getNoteById, updateNoteById, deleteNoteById } = require('./handler');
+const {
+  getNotes, addNotes, getNoteById, updateNoteById, deleteNoteById,
+} = require('./handler');
 
 routes.post('/notes', addNotes);
 routes.get('/notes', getNotes);
